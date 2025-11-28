@@ -1,0 +1,5 @@
+{
+  "name": "SafeVault Web3",
+  "description": "A Solana Anchor frontend for depositing and borrowing assets from the SafeVault protocol.",
+  "requestFramePermissions": []
+}

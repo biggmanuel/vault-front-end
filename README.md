@@ -1,11 +1,31 @@
-<div align="center">
+# SafeVault Web3 Frontend
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A Next.js/React frontend for the SafeVault Solana Anchor program.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- Connect Solana Wallets (Phantom, Solflare)
+- Initialize Vault (Admin)
+- Deposit Tokens (User)
+- Borrow Tokens (User)
+- Real-time Vault & User Balance Updates
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Configuration
+The DApp is currently configured for **Devnet**.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+### Constants
+Key configuration values are located in `utils/constants.ts`:
+- **Program ID:** `F6v2QEtfjZLEb2fQMdGRSwM26P1U7jmZiB8RxJ4pZfv9`
+- **Mint Address:** `Gh9ZwEmdLJ8DscKNTkTqPbNwLNNBjuSzaG9Vp2KGtKJr` (Default test mint)
 
-</div>
+## Dependencies
+This project uses a CDN-based import map for zero-build configuration, compatible with the current environment. Key libraries:
+- React 18
+- @solana/web3.js
+- @coral-xyz/anchor
+- Tailwind CSS
+
+## Usage
+1. Ensure your wallet is connected to **Devnet**.
+2. If the vault is not initialized, use the "Admin Zone" to Initialize it.
+3. Airdrop yourself some of the configured Mint tokens (or change `MINT_ADDRESS` in constants to a token you own).
+4. Deposit and Borrow assets using the dashboard.
